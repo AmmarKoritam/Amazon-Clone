@@ -1,0 +1,31 @@
+.empty {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 1em;
+  padding: 0 1em;
+}
+
+.empty h3 {
+  font-size: 1.4rem;
+}
+
+.empty button {
+  width: 40%;
+  margin: 0 auto;
+  background-color: #f0c14b;
+  border-radius: 2px;
+  height: 30px;
+  border: 1px solid;
+  margin-top: 10px;
+  border-color: #a88734 #9c7e31 #846a29;
+  border-radius: 5px;
+  color: #111;
+  font-weight: 700;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.empty button:hover {
+  transform: scale(1.3);
+}
