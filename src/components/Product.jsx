@@ -2,13 +2,16 @@ import { useAuth } from "../context/GlobleState";
 import StarRating from "./StartRating";
 import "./Product.css";
 
-function Product({ id, title, image, pricing }) {
+function Product({ id, title, image, pricing, quantity }) {
   const { dispatch } = useAuth();
 
   function handleAddItem(e) {
     e.preventDefault();
 
-    dispatch({ type: "add/item", payload: { id, title, image, pricing } });
+    dispatch({
+      type: "add/item",
+      payload: { id, title, image, pricing, quantity },
+    });
   }
 
   return (

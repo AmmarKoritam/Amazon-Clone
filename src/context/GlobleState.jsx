@@ -28,6 +28,26 @@ function reducer(state = initialState, action) {
         basket: state.basket.filter((item) => item.id !== action.payload),
       };
 
+    case "increment/item":
+      return {
+        ...state,
+        basket: state.basket.map((item) =>
+          item.id === action.payload
+            ? { ...item, quantity: item.quantity + 1 }
+            : item
+        ),
+      };
+
+    case "decrement/item":
+      return {
+        ...state,
+        basket: state.basket.map((item) =>
+          item.id === action.payload
+            ? { ...item, quantity: item.quantity - 1 }
+            : item
+        ),
+      };
+
     case "clear/items":
       return {
         ...state,
@@ -60,6 +80,10 @@ function useAuth() {
 
 export function getTotalPrice(basket) {
   return basket.reduce((acc, item) => acc + item.pricing, 0);
+}
+
+export function getCurrentQuantity(basket, id) {
+  return basket.find((item) => item.id === id)?.quantity ?? 1;
 }
 
 export { GlobleProvider, useAuth };
