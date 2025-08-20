@@ -9,6 +9,7 @@
   min-width: 100px;
   margin: 10px;
   padding: 20px;
+  border-radius: 5px;
   background-color: darkgrey;
   transition: background 0.3s ease;
 }
@@ -62,4 +63,31 @@
   z-index: 1;
   margin-left: 5px;
   margin-right: 5px;
+}
+
+@media (max-width: 850px) {
+  .product {
+    padding: 15px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .product-info {
+    min-height: 85px;
+  }
+
+  .product-info p {
+    font-size: 0.8rem;
+  }
+
+  .product > img {
+    max-height: 90px;
+    margin-block: 5px;
+  }
+
+  .product > button {
+    margin: 0 auto;
+    width: 130px;
+    height: 30px;
+  }
 }

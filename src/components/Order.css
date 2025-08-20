@@ -14,3 +14,20 @@
   font-weight: 500;
   text-align: right;
 }
+
+@media (max-width: 850px) {
+  .order {
+    padding: 15px;
+  }
+
+  .order h2 {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .order > p,
+  .order-id {
+    text-align: center;
+    position: static;
+  }
+}

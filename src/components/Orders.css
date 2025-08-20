@@ -4,3 +4,15 @@
 .orders > h1 {
   margin: 30px 0;
 }
+
+@media (max-width: 850px) {
+  .orders {
+    padding: 8px;
+  }
+
+  .orders > h1 {
+    margin: 15px 0;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}

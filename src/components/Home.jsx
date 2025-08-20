@@ -21,7 +21,7 @@ function Home() {
         <div className="home-row">
           <Product
             id={shortid.generate()}
-            title="Kids Headphones - noot products K11 Foldable Stereo Tangle-Free 3.5mm Jack Wired Cord On-Ear Headset for Children/Teens/Boys/Girls/Smartphones/School/Kindle/Airplane Travel/Plane/Tablet (Navy/Teal)"
+            title="Kids Headphones - noot products K11 Foldable Stereo Tangle-Free 3.5mm Jack Wired Cord On-Ear Headset for Children/Teens/Boys/Girls/Smartphones"
             pricing={220}
             image={ProductImg1}
             quantity={1}

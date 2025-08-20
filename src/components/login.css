@@ -59,3 +59,9 @@
   margin-top: 10px;
   cursor: pointer;
 }
+
+@media (max-width: 850px) {
+  .login-container {
+    border: none;
+  }
+}

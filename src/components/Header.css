@@ -16,7 +16,7 @@
 
 .header-search {
   display: flex;
-  flex: 1;
+  flex: 1 0;
   align-items: center;
   border-radius: 24px;
 }
@@ -58,4 +58,111 @@
 .header-optionBasket .header-basketCount {
   margin-left: 10px;
   margin-right: 10px;
+}
+
+@media (max-width: 850px) {
+  .header-search,
+  .header-nav {
+    display: none;
+  }
+
+  .header a {
+    margin: 0 auto;
+  }
+
+  .header-logo {
+    margin-top: 18px;
+  }
+
+  .button {
+    color: #131921;
+    font-size: 1.6rem;
+  }
+
+  .button {
+    position: relative;
+    left: 35px;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+  }
+
+  .header-btn-img {
+    display: contents;
+  }
+
+  .header-btn-img.open {
+    display: flex;
+  }
+
+  .header-btn-img.open .button {
+    left: -45px;
+    top: 13px;
+  }
+
+  .header-nav-search.open {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-nav-search.open .header-search {
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .header-nav-search.open .header-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
+  }
+
+  .header.open {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .header-nav.open {
+    display: flex;
+    position: absolute;
+    visibility: visible;
+    height: auto;
+    position: relative;
+    bottom: -15px;
+    background-color: #131921;
+  }
+}
+
+@media (min-width: 851px) and (max-width: 1800px) {
+  .header {
+    justify-content: space-between;
+  }
+
+  .header-nav-search {
+    display: flex;
+  }
+
+  .header-logo {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1801px) and (max-width: 3400px) {
+  .header {
+    justify-content: space-around;
+  }
+
+  .header-nav-search {
+    display: flex;
+  }
+
+  .header-logo {
+    margin-top: 0;
+  }
 }
